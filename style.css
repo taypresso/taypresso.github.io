@@ -204,6 +204,7 @@ footer #footnote{
   font-size: small;
   padding-top: 15px;
   background-color: #fff4f3;
+  padding: 10px 0 10px;;
 }
 #footnote #hosting{
   opacity: 0.6;
