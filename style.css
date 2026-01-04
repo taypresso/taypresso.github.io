@@ -1,0 +1,234 @@
+body{
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+  background-color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: "Protest Riot", sans-serif;
+  color: #121212;
+  font-size: 44px;
+}
+@media screen and (max-width: 500px){
+  h1{
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 500px) {
+  h2{
+    font-size: 28px;
+  }
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+.btn{ 
+  border: none;
+  background-color: #121212;
+  font-weight: 300;
+}
+.btn:hover{ 
+  background-color: #616161;
+}
+
+/* custom css */
+.navbar{
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: normal;
+  background-color: #121212;
+  
+}
+.navbar-brand{
+  font-size: x-large;
+  font-weight: bolder;
+}
+.nav-item a{
+  color: rgba(255,255,255,.55);
+}
+.navbar .navbar-toggler{
+  border: none;
+}
+
+/* feature section */
+#featureSection{ 
+  background: linear-gradient(to bottom, #bef9f9, 70%, #ffffff);
+  padding-top: 150px;
+  padding-bottom: 150px;
+  min-height: auto;
+}
+  @media screen and (max-width: 500px) {
+    #featureSection{ 
+      padding-top: 70px;
+      padding-bottom: 70px;
+      min-height: auto;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    #about{
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+#about h1{
+  font-size:52px;
+}
+  @media screen and (max-width: 992px) {
+    #about h1{
+      font-size: 36px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    #about h1{
+      font-size: 50px;
+      margin-bottom: 0px;
+    }
+  }
+#about .lead{
+  font-size: x-large;
+}
+  @media screen and (max-width: 500px) {
+    #about .lead{  
+      font-size: x-large;
+    }
+  }
+
+/* About me */
+#aboutMe{
+  background-color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#aboutMe h1{
+  background: linear-gradient(0deg,#fce62e 40%,transparent 0);
+  display: inline;
+}
+#aboutMe .lead{
+  font-size: x-large;
+}
+  @media screen and (max-width: 500px) {
+    #aboutMe .lead{  
+      font-size: x-large;
+    }
+  }
+#aboutMe a{
+  color: #ffffff;
+  text-decoration: none;
+}
+#aboutMe a:hover{
+  color: #fff4f3;
+  text-decoration: underline;
+}
+
+/* main */
+main{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #FFF;
+  font-size: x-large;
+  font-weight: 300;
+}
+main h1{
+  background: linear-gradient(0deg,#fce62e 40%,transparent 0);
+  display: inline;
+}
+main a{
+  color: #ffffff;
+}
+main a:hover{
+  color: #fff4f3;
+}
+
+/* Blog */
+#first{
+  margin-bottom: 100px;
+}
+#first img{
+  border-radius: 10px;
+  box-shadow: 4.7px 9.4px 9.4px hsl(0deg 0% 0% / 35%);
+}
+#firstDescription{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* insights */
+#second{
+  padding-top: 50px;
+}
+#second img{
+  border-radius: 10px;
+  box-shadow: 4.7px 9.4px 9.4px hsl(0deg 0% 0% / 35%);
+}
+#secondDescription{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* footer */
+footer{
+  background-color: #fff4f3;
+  text-align: center;
+}
+
+/* contact */
+footer #contact{
+  background-color: #fff4f3;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-size: x-large;
+}
+footer #contact h2{
+  font-family: "Protest Riot", sans-serif;
+}
+footer #contact h5{
+  text-transform: initial;
+  font-size: xx-large;
+}
+footer #contact p{
+  color: #616161;
+}
+footer #contact span{
+  margin-right: 5px;
+}
+footer #contact .fa-brands {
+  font-size: x-large;
+  color: #006eb7;
+}
+
+/* footnote */
+footer #footnote{
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: small;
+  padding-top: 15px;
+  background-color: #fff4f3;
+  padding: 10px 0 10px;
+}
+#footnote #hosting{
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+  @media screen and (max-width: 500px){
+    #footnote #hosting{
+      font-size: x-small;
+    }
+  }
+#footnote #hosting a{
+  color: #121212;
+}
+#footnote #hosting a:hover{
+  color: #616161;
+}
+#copyright a{
+  font-family: "Google Sans Flex", sans-serif;
+  color: #121212;
+}
+#copyright a:hover{
+  color: #616161;
+}
