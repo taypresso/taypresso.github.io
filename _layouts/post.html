@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<!-- Post Header Section with Integrated Navbar -->
+<header class="pt-3 pb-2">
+  <div class="container nav-container mb-3">
+    {% include naver.html %}
+  </div>
+
+  <div class="container text-center post-main-content px-3 px-md-4" style="max-width: 800px;">
+    <small class="text-muted d-block mb-2">{{ page.date | date: "%B %d, %Y" }}</small>
+    <h1 class="display-6 fw-bold mb-0" style="color: #e5c07b;">{{ page.title }}</h1>
+  </div>
+</header>
+
+<!-- Main Post Content Section -->
+<main class="py-4">
+  <div class="container py-4 post-container px-3 px-md-4" style="max-width: 800px;">
+    <article class="post-content mb-4">
+      {{ content }}
+    </article>
+
+    <!-- Post Navigation (Newer / Back to Blog / Older) -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-5 pt-3 gap-3">
+      
+      <!-- Newer Post Link -->
+      <div class="w-100 text-center text-md-start">
+        {% if page.previous %}
+          <a href="{{ page.previous.url | relative_url }}" class="btn btn-outline-light btn-sm px-3 py-2 w-100 w-md-auto" style="border-color: #5c6370; color: #61afef;">
+            &larr; Newer Post
+          </a>
+        {% else %}
+          <button class="btn btn-outline-secondary btn-sm px-3 py-2 w-100 w-md-auto" disabled>&larr; Newer Post</button>
+        {% endif %}
+      </div>
+
+      <!-- Back to Blog Link -->
+      <div class="w-100 text-center text-nowrap">
+        <a href="{{ '/blog/' | relative_url }}" class="text-decoration-none fw-medium" style="color: #61afef;">
+          Back to Blog
+        </a>
+      </div>
+
+      <!-- Older Post Link -->
+      <div class="w-100 text-center text-md-end">
+        {% if page.next %}
+          <a href="{{ page.next.url | relative_url }}" class="btn btn-outline-light btn-sm px-3 py-2 w-100 w-md-auto" style="border-color: #5c6370; color: #61afef;">
+            Older Post &rarr;
+          </a>
+        {% else %}
+          <button class="btn btn-outline-secondary btn-sm px-3 py-2 w-100 w-md-auto" disabled>Older Post &rarr;</button>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</main>

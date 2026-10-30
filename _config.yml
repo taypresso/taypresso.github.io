@@ -1,0 +1,25 @@
+# Site Settings
+title: "Taypresso"
+description: "Brewing Better Analytics"
+url: "https://taypresso.github.io"
+baseurl: "" 
+
+# Build Settings / Plugins
+plugins:
+  - jekyll-paginate
+
+# Pagination Configuration
+paginate: 7
+paginate_path: "/blog/page:num/"
+
+# Navigation Pages
+header_pages:
+  - about.html
+  - blog/index.html
+
+# Permalink Configuration
+permalink: /blog/:year/:title/
+
+# Markdown Settings
+kramdown:
+  input: GFM
